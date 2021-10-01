@@ -1,0 +1,29 @@
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+.content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+}
+
+.content img {
+	margin: 0 auto 30px;
+}
+
+.content input {
+	border-color: #7a5d27;
+	border-radius: 0;
+}
+
+.content .Button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #7a5d27;
+	border-radius: 0;
+}
