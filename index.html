@@ -1,25 +1,31 @@
-<html lang="en">
+
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fortune Telling Machine</title>
 
-	<link rel="stylesheet" href="css/monalisa.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/libs/monalisa.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body style="background-image: url(images/bg.png)">
 
-	<div class="content">
-		<img src="" alt="Imagem da máquina">
+	<div class="container">
 
+		<div class="content">
+			<div class="concha" id="machine">
+				<img src="images/machine.png">
+			</div>		
+			<p class="answer_"></p>
 
-        <div>
-			<input type="text" placeholder="Insira sua pergunta aqui" id="pergunta">
-        	<button class="Button">Ok</button>
-        </div>
+			
+		</div>
 	</div>
-	
-	<script src="js/jquery.min.js"></script>
+
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/wow.min.js"></script>
 	<script src="js/answer.js"></script>
 	<script src="js/main.js"></script>
 </body>
