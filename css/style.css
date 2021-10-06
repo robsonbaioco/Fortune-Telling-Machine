@@ -14,7 +14,7 @@ body {
 }
 
 .content img {
-	margin: 0 auto 30px;
+	margin: 0 auto;
 }
 
 .content input {
@@ -33,14 +33,40 @@ body {
 
 .content .answer {
 	position: absolute;
-	bottom: -80px;
-	width: 100%;
-	color: #fff;
+	top: 120px;
+	left: -1600px;
+	margin: 0;
+	padding: 20px;
+	width: 762px;
+	height: 175px;
+	color: #000;
+	font-family: 'Upheaval TT (BRK)';
+	font-size: 50px;
+	line-height: 40px;
+	transition: 0ms;
+	opacity: 0;
 	text-align: center;
 }
 
+.content .answer._active {
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 1;
+	transition: 200ms;
+}
+
+.content .answer span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 20px;
+	width: 100%;
+}
+
 ._shake {
-	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+	pointer-events: none;
 }
 
 @keyframes shake {
@@ -64,5 +90,12 @@ body {
 @media only screen and (max-width: 1200px) {
 	.content {
 		width: 90%;	
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.content .answer {
+		top: 280px;
+		zoom: 40%;
 	}
 }
